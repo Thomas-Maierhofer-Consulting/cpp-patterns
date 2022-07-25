@@ -1,0 +1,16 @@
+# C++ Patterns and Snippets
+
+Collection of interesting / useful modern (C++17/C++20) C++ patterns and snippets.
+
+## Testing in Compiler Explorer
+
+https://godbolt.org/ 
+Compiler Options clang/gcc: -Wall -Wextra -Wpedantic -Os  -std=c++20
+
+## Object Layout Deduction (C++ 17)
+
+    src/object_layout_deduction
+
+* Instantiating different versions of a class depending on the construction
+* Putting extra parts in the different versions(methods, fields)
+* Having a common part which is shared
