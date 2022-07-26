@@ -1,0 +1,10 @@
+{
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.clang_format_fallbackStyle": "WebKit",
+
+    "compiler-explorer.url": "https://godbolt.org", // url of the compiler explorer you want to use.
+    "compiler-explorer.compiler": "clang_trunk", // Compiler code - See help below.
+    "compiler-explorer.options": "-std=c++20 -Os", // Compiler options
+    "compiler-explorer.debug": true, // true indicates that the extension will print debug to its output channel.
+    "compiler-explorer.include": [<filepaths>],
+}

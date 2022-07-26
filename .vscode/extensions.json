@@ -1,6 +1,10 @@
 {
     "recommendations": [
         "twxs.cmake",
-        "ms-vscode.cpptools-extension-pack"
+        "ms-vscode.cpptools-extension-pack",
+        "matthewevers.compiler-explorer",
+        "streetsidesoftware.code-spell-checker",
+        "asciidoctor.asciidoctor-vscode",
+        "ms-vscode.cmake-tools"
     ]
 }

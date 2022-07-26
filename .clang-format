@@ -1,0 +1,30 @@
+---
+BasedOnStyle: WebKit
+
+# Intent 
+IndentWidth: '4'
+UseTab: Never
+AccessModifierOffset: '-4'
+NamespaceIndentation: None
+ColumnLimit: '160'
+
+# Options
+AlignAfterOpenBracket: Align
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: Inline
+AlwaysBreakTemplateDeclarations: Yes
+BinPackParameters: 'false'
+BreakBeforeBraces: Stroustrup
+BreakConstructorInitializers: BeforeComma
+ColumnLimit: '120'
+Cpp11BracedListStyle: 'true'
+FixNamespaceComments: 'true'
+KeepEmptyLinesAtTheStartOfBlocks: 'false'
+Language: Cpp
+PointerAlignment: Left
+SortIncludes: 'false'
+SpaceAfterTemplateKeyword: 'false'
+SpaceBeforeParens: ControlStatements
+Standard: Latest
+...
