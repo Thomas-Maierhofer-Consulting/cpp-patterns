@@ -5,7 +5,8 @@ Collection of interesting / useful modern (C++17/C++20) C++ patterns and snippet
 ## Testing in Compiler Explorer
 
 https://godbolt.org/ 
-Compiler Options clang/gcc: -Wall -Wextra -Wpedantic -Os  -std=c++20
+Compiler Options clang/gcc: -std=c++20 -Wall -Wextra -Wpedantic -Os
+Compiler Options MSVC: /std:c++20 /W4
 
 ## Object Layout Deduction (C++ 17)
 
@@ -14,3 +15,12 @@ Compiler Options clang/gcc: -Wall -Wextra -Wpedantic -Os  -std=c++20
 * Instantiating different versions of a class depending on the construction
 * Putting extra parts in the different versions(methods, fields)
 * Having a common part which is shared
+
+## Type Literals (C++ 20)
+
+    src/type_literals
+
+* using C++ 20 string literal operator template to generate a type without data+ 
+  https://en.cppreference.com/w/cpp/language/user_literal
+* Converting the type literal to std::array and std::string_view 
+* output the generated type info at compile time with [[deprecated]] warnings
