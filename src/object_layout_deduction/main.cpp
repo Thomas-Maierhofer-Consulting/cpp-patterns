@@ -50,11 +50,11 @@ int main()
     objDouble2.set_data(DOUBLE_VALUE42_42);
     objDouble1 = objDouble2; // Assignable, it is the same type
 
-    // std::cout << "objDouble2 data is " << objDouble2.get_data() << std::endl;
-    // std::cout << "sizeof objVoid is " << sizeof(objVoid) << std::endl;
-    // std::cout << "sizeof objDouble1 is " << sizeof(objDouble1) << std::endl;
-    // std::cout << "sizeof objDouble2 is " << sizeof(objDouble2) << std::endl;
-    // std::cout << "sizeof objInt is " << sizeof(objInt) << std::endl;
+    std::cout << "objDouble2 data is " << objDouble2.get_data() << std::endl;
+    std::cout << "sizeof objVoid is " << sizeof(objVoid) << std::endl;
+    std::cout << "sizeof objDouble1 is " << sizeof(objDouble1) << std::endl;
+    std::cout << "sizeof objDouble2 is " << sizeof(objDouble2) << std::endl;
+    std::cout << "sizeof objInt is " << sizeof(objInt) << std::endl;
 
     return sizeof(objVoid);
 }

@@ -8,7 +8,19 @@ https://godbolt.org/
 Compiler Options clang/gcc: -std=c++20 -Wall -Wextra -Wpedantic -Os
 Compiler Options MSVC: /std:c++20 /W4
 
+## Consteval Value (C++ 20)
+
+https://compiler-explorer.com/z/d6KcrKede
+
+    src/consteval_value
+
+* Using a non type template parameter as value at compile time
+* Providing compile time values from build in types and custom types
+* ensure compile time evaluation
+
 ## Object Layout Deduction (C++ 17)
+
+https://compiler-explorer.com/z/PxME3r11W
 
     src/object_layout_deduction
 
@@ -17,6 +29,8 @@ Compiler Options MSVC: /std:c++20 /W4
 * Having a common part which is shared
 
 ## Type Literals (C++ 20)
+
+https://compiler-explorer.com/z/8Kq8Tcreh
 
     src/type_literals
 
