@@ -11,5 +11,6 @@ else()
 endif()
 
 add_subdirectory(src/consteval_value)
+add_subdirectory(src/copy_swap_idiom)
 add_subdirectory(src/object_layout_deduction)
 add_subdirectory(src/type_literals)
