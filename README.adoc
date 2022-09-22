@@ -38,3 +38,14 @@ https://compiler-explorer.com/z/8Kq8Tcreh
   https://en.cppreference.com/w/cpp/language/user_literal
 * Converting the type literal to std::array and std::string_view 
 * output the generated type info at compile time with [[deprecated]] warnings
+
+
+## Latest Drafts of the C++ Standard
+
+### C++ 17
+
+https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4713.pdf
+
+### C++ 20
+
+https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/n4878.pdf
