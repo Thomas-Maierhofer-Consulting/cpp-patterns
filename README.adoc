@@ -1,6 +1,7 @@
 # C++ Patterns and Snippets
 
-Collection of interesting / useful modern (C++17/C++20) C++ patterns and snippets.
+Collection of modern (C++17/C++20) C++ patterns and snippets and some standard patterns.
+The code labeled C++17 will probably use no specific C++17 features and can be compiled with earlier standards, but this is not tested.
 
 ## Testing in Compiler Explorer
 
@@ -12,17 +13,26 @@ Compiler Options MSVC: /std:c++20 /W4
 
 https://compiler-explorer.com/z/d6KcrKede
 
-    src/consteval_value
+    targets/consteval_value
 
 * Using a non type template parameter as value at compile time
 * Providing compile time values from build in types and custom types
-* ensure compile time evaluation
+* Ensure compile time evaluation
+
+## Inside Copy Swap Idiom (C++ 17)
+
+https://compiler-explorer.com/z/6e8P33vGv
+
+    targets/inside_copy_swap_idiom
+
+* implementing swap
+* Using the copy swap idiom to implement copy and move assignment
 
 ## Object Layout Deduction (C++ 17)
 
 https://compiler-explorer.com/z/PxME3r11W
 
-    src/object_layout_deduction
+    targets/object_layout_deduction
 
 * Instantiating different versions of a class depending on the construction
 * Putting extra parts in the different versions(methods, fields)
@@ -32,7 +42,7 @@ https://compiler-explorer.com/z/PxME3r11W
 
 https://compiler-explorer.com/z/8Kq8Tcreh
 
-    src/type_literals
+    targets/type_literals
 
 * using C++ 20 string literal operator template to generate a type without data+ 
   https://en.cppreference.com/w/cpp/language/user_literal
