@@ -5,14 +5,14 @@ The code labeled C++17 will probably use no specific C++17 features and can be c
 
 ## Testing in Compiler Explorer
 
-https://www.compiler-explorer.com/
+https://compiler-explorer.com/z/zYbf6dxjP
 
 ### Useful Compiler Options 
 
 clang/gcc:
 
 ----
--std=c++20 -Os -Wall -Wextra -Wpedantic -Wshadow -Wstrict-aliasing -Wconversion -Wsign-conversion -Wnull-dereference
+-std=c++20 -Os -Wall -Wextra -Wpedantic -Wshadow -Wstrict-aliasing -Wconversion -Wsign-conversion -Wnull-dereference -Wno-format-security
 ----
 
 MSVC
@@ -75,7 +75,7 @@ https://compiler-explorer.com/z/PxME3r11W
 * Putting extra parts in the different versions(methods, fields)
 * Having a common part which is shared
 
-## Object Layout Deduction (C++ 20)
+## Transient Proxy using RTTY (C++ 20)
 
 https://compiler-explorer.com/z/TjWTTbPhr
 
