@@ -5,9 +5,46 @@ The code labeled C++17 will probably use no specific C++17 features and can be c
 
 ## Testing in Compiler Explorer
 
-https://godbolt.org/ 
-Compiler Options clang/gcc: -std=c++20 -Wall -Wextra -Wpedantic -Os
-Compiler Options MSVC: /std:c++20 /W4
+https://www.compiler-explorer.com/
+
+### Useful Compiler Options 
+
+clang/gcc:
+
+----
+-std=c++20 -Os -Wall -Wextra -Wpedantic -Wshadow -Wstrict-aliasing -Wconversion -Wsign-conversion -Wnull-dereference
+----
+
+MSVC
+
+----
+/std:c++20 /W4
+----  
+
+### Simple log function which can be switched off to generate no logging code
+
+[source,C++]
+----
+#include <cstdio>
+#include <utility>
+
+template <typename... Args>
+inline void log(const char* msg, [[maybe_unused]] Args&&... args) noexcept {
+    static constexpr bool enable = true;
+    if constexpr (enable) {
+        std::printf(msg, std::forward<Args>(args)...);
+        std::printf("\n");
+    }
+}
+
+int main() {
+
+    log( "hello %s\n", "world");
+    return 0;
+}
+
+----
+
 
 ## Consteval Value (C++ 20)
 
@@ -37,6 +74,15 @@ https://compiler-explorer.com/z/PxME3r11W
 * Instantiating different versions of a class depending on the construction
 * Putting extra parts in the different versions(methods, fields)
 * Having a common part which is shared
+
+## Object Layout Deduction (C++ 20)
+
+https://compiler-explorer.com/z/TjWTTbPhr
+
+    targets/transient_proxy_rtty
+
+* type erase a reference via RTTY to be transferred type safe across ABI boundaries
+* function traits implementation
 
 ## Type Literals (C++ 20)
 
