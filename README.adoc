@@ -75,6 +75,17 @@ https://compiler-explorer.com/z/PxME3r11W
 * Putting extra parts in the different versions(methods, fields)
 * Having a common part which is shared
 
+
+## Template Parameter Specialization fom Specialized Template (C++ 17)
+
+https://compiler-explorer.com/z/M877zbac7
+
+    targets/specialize_template_from_template
+
+* Extracting parameter pack from arbitrary specialized templates
+* Dumping demangled type names on Windows and Linux
+
+
 ## Transient Proxy using RTTY (C++ 20)
 
 https://compiler-explorer.com/z/TjWTTbPhr
