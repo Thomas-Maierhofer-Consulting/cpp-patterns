@@ -56,6 +56,15 @@ https://compiler-explorer.com/z/d6KcrKede
 * Providing compile time values from build in types and custom types
 * Ensure compile time evaluation
 
+## Find Type in Parameter Pack (C++ 17)
+
+https://compiler-explorer.com/z/59oMWzToo
+
+    targets/find_type
+
+* finds the position of a type in a parameter pack or specialized variadic template
+
+
 ## Inside Copy Swap Idiom (C++ 17)
 
 https://compiler-explorer.com/z/6e8P33vGv
@@ -74,6 +83,11 @@ https://compiler-explorer.com/z/PxME3r11W
 * Instantiating different versions of a class depending on the construction
 * Putting extra parts in the different versions(methods, fields)
 * Having a common part which is shared
+
+
+## State Machine
+
+https://compiler-explorer.com/z/7csTczKbq
 
 
 ## Template Parameter Specialization fom Specialized Template (C++ 17)
@@ -105,6 +119,8 @@ https://compiler-explorer.com/z/8Kq8Tcreh
   https://en.cppreference.com/w/cpp/language/user_literal
 * Converting the type literal to std::array and std::string_view 
 * output the generated type info at compile time with [[deprecated]] warnings
+
+
 
 
 ## Latest Drafts of the C++ Standard
