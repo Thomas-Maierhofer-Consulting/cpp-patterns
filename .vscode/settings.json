@@ -1,10 +1,45 @@
 {
     "C_Cpp.codeAnalysis.clangTidy.enabled": true,
     "C_Cpp.clang_format_fallbackStyle": "WebKit",
-
     "compiler-explorer.url": "https://godbolt.org", // url of the compiler explorer you want to use.
     "compiler-explorer.compiler": "clang_trunk", // Compiler code - See help below.
     "compiler-explorer.options": "-std=c++20 -Os", // Compiler options
     "compiler-explorer.debug": true, // true indicates that the extension will print debug to its output channel.
-    "compiler-explorer.include": [<filepaths>],
+    "compiler-explorer.include": [<filepaths>
+    ],
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
+    "C/C++ Include Guard.Comment Style": "Line",
+    "C/C++ Include Guard.Macro Type": "Filepath",
+    "C/C++ Include Guard.Remove Extension": false,
+    "C/C++ Include Guard.Path Skip": 1,
+    "[c]": {
+        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format",
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
+    "[proto]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2
+    },
+    "files.exclude": {
+        "**/.conan": true,
+        "**/__pycache__": true,
+        "**/*.egg-info": true,
+    },
+    "files.associations": {
+        "any": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "tuple": "cpp",
+        "utility": "cpp",
+    }
 }
