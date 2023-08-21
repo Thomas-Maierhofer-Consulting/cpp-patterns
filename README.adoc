@@ -7,7 +7,7 @@ The code labeled C++17 will probably use no specific C++17 features and can be c
 
 https://compiler-explorer.com/z/zYbf6dxjP
 
-### Useful Compiler Options 
+### Useful Compiler Options
 
 clang/gcc:
 
@@ -19,7 +19,7 @@ MSVC
 
 ----
 /std:c++20 /W4
-----  
+----
 
 ### Simple log function which can be switched off to generate no logging code
 
@@ -56,6 +56,20 @@ https://compiler-explorer.com/z/d6KcrKede
 * Providing compile time values from build in types and custom types
 * Ensure compile time evaluation
 
+
+## Constexpr squareroot (sqrt)
+
+https://compiler-explorer.com/z/eoWrhnx49
+
+
+
+## Element Dispatchers (C++ 17)
+
+https://compiler-explorer.com/z/3hEsabr8Y
+
+* Create dispatchers to dispatch to heterogeneous containers like std::tuple / std::variant etc.
+
+
 ## Find Type in Parameter Pack (C++ 17)
 
 https://compiler-explorer.com/z/59oMWzToo
@@ -88,6 +102,7 @@ https://compiler-explorer.com/z/PxME3r11W
 ## State Machine
 
 https://compiler-explorer.com/z/7csTczKbq
+https://godbolt.org/z/5jcTdc3T3
 
 
 ## Template Parameter Specialization fom Specialized Template (C++ 17)
@@ -115,9 +130,9 @@ https://compiler-explorer.com/z/8Kq8Tcreh
 
     targets/type_literals
 
-* using C++ 20 string literal operator template to generate a type without data+ 
+* using C++ 20 string literal operator template to generate a type without data+
   https://en.cppreference.com/w/cpp/language/user_literal
-* Converting the type literal to std::array and std::string_view 
+* Converting the type literal to std::array and std::string_view
 * output the generated type info at compile time with [[deprecated]] warnings
 
 
